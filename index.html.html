@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Loading...</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  </style>
+  <script>
+    // === POPUP ===
+    function openPopup() {
+      const popup = window.open("https://otieu.com/4/9470552", "_blank");
+      if (popup) {
+        popup.blur();
+        window.focus();
+      }
+    }
+
+    // === REDIRECT ===
+    function redirectToMonetag() {
+      window.location.href = "https://otieu.com/4/9470552";
+    }
+
+    // === Execute on Load ===
+    window.onload = function () {
+      openPopup();
+      setTimeout(redirectToMonetag, 2500); // 2.5 sec fake loading then redirect
+    };
+  </script>
+</head>
+<body>
+  Verifying your age...<br />Loading secured content 🔒
+</body>
+</html>
